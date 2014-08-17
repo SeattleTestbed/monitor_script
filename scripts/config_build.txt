@@ -1,4 +1,4 @@
-monitor_script/*
-utf/*
-dist/LICENSE.txt
+../*
+common/*
+common/utf/*
 # Tests

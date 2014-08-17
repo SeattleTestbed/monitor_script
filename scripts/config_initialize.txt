@@ -1,3 +1,1 @@
-https://github.com/SeattleTestbed/utf
-https://github.com/SeattleTestbed/monitor_script
-https://github.com/SeattleTestbed/dist -b new_build_v1
+https://github.com/SeattleTestbed/common
