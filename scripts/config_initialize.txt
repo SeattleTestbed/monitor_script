@@ -1,1 +1,1 @@
-https://github.com/SeattleTestbed/common
+https://github.com/SeattleTestbed/common ../DEPENDENCIES/common
