@@ -80,12 +80,12 @@ def notify(text, subject):
   notify_list = []
   email_file = open("email_address_list_file", "r")
   email_list = email_file.readlines()
+  email_file.close()
   for email_address in email_list:
     email_address = email_address.rstrip("\r\n")
     notify_list.append(email_address)
     log("notifying " + email_address)
     send_gmail.send_gmail(email_address, subject, text, "")
-  email_file.close()
   return
 
   
