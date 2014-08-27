@@ -25,6 +25,9 @@ import time
 import socket
 import sys
 
+# the people to notify on failure/if anything goes wrong
+notify_list = ["jcappos@poly.edu", "monzum@u.washington.edu", "gppressi@gmail.com", "leon.wlaw@gmail.com", "hermanchchen@gmail.com"]
+
 
 def log(msg):
   """
@@ -75,17 +78,11 @@ def notify(text, subject):
     except:
       pass
   subject = subject + " @ "+ hostname + " : " + sys.argv[0]
-
-  #This will loop through a file containing emails that need to be notified and create a list out of them
-  notify_list = []
-  email_file = open("email_address_list_file", "r")
-  email_list = email_file.readlines()
-  email_file.close()
-  for email_address in email_list:
-    email_address = email_address.rstrip("\r\n")
-    notify_list.append(email_address)
-    log("notifying " + email_address)
-    send_gmail.send_gmail(email_address, subject, text, "")
+  
+  for emailaddr in notify_list:
+    log("notifying " + emailaddr)
+    send_gmail.send_gmail(emailaddr, subject, text, "")
+	
   return
 
   
