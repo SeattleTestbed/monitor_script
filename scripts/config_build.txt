@@ -1,4 +1,4 @@
-../*
-common/*
-common/utf/*
+./*
+DEPENDENCIES/common/*
+DEPENDENCIES/common/utf/*
 # Tests
