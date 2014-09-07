@@ -1,0 +1,4 @@
+./*
+DEPENDENCIES/common/*
+DEPENDENCIES/common/utf/*
+# Tests
