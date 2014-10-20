@@ -1,8 +1,7 @@
 import sys
 import subprocess
 import monitor_processes
-import thread
-import os
+
 #pragma out All critical processes on -seattleclearinghouse are up and running
 
 """
